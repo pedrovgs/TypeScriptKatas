@@ -32,7 +32,7 @@ yarn test:mutate # Executes all the tests using a mutation testing framework
 
 | # | Kata Statement | PR | Topic |
 |---|----------------|----|-------|
-| 3 | [Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) | [https://github.com/pedrovgs/KotlinKatas/pull/6](https://github.com/pedrovgs/TypeScriptKatas/pull/1) | Literal types, property-based testing and mutation testing integration. Focused on the Cell structure and not the board implementation so we can learn about property and mutation testing |
+| 1 | [Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) | [https://github.com/pedrovgs/KotlinKatas/pull/6](https://github.com/pedrovgs/TypeScriptKatas/pull/1) | Literal types, property-based testing and mutation testing integration. Focused on the Cell structure and not the board implementation so we can learn about property and mutation testing |
 
 Developed By
 ------------
