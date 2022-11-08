@@ -1,0 +1,4 @@
+#Ignore reports folder
+cypress/reports
+src/wasm/binary
+workers/

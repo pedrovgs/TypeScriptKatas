@@ -1,0 +1,32 @@
+{
+  "extends": [
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
+    "plugin:jest/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint", "jest", "unused-imports"],
+  "rules": {
+    "no-console": "error",
+    "jest/expect-expect": "off", // Explicitly turn this rule off since it's included by "plugin:jest/recommended"
+    "jsx-a11y/anchor-has-content": "off",
+    "@typescript-eslint/no-unused-vars": "off", // Turn this rule off in order to use "unused-imports" plugin, which supports automatic fixing
+    "unused-imports/no-unused-imports": "error",
+    "unused-imports/no-unused-vars": [
+      "error",
+      {
+        "vars": "all",
+        "varsIgnorePattern": "^_",
+        "args": "after-used",
+        "argsIgnorePattern": "^_"
+      }
+    ]
+  },
+  "overrides": [
+    {
+      "files": ["**/*.stories.*"],
+      "rules": { "import/no-anonymous-default-export": "off" }
+    }
+  ]
+}

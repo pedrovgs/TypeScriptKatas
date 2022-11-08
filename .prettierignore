@@ -1,0 +1,3 @@
+cypress/reports
+src/wasm/binary
+cypress/fixtures/frontend_rendering
