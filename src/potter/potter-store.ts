@@ -39,10 +39,7 @@ const calculatePriceBasedOnTheNumberOfBooks = (
     (numberOfEqualBooks) => numberOfEqualBooks > 0
   ).length;
   if (numberOfDifferentBooks === 1) {
-    return (
-      oneBookPrice *
-      booksGroupedByOccurrences.reduce((a, b) => a + (b ? b : 0), 0)
-    );
+    return oneBookPrice * booksGroupedByOccurrences.reduce((a, b) => a + b, 0);
   } else if (numberOfDifferentBooks === 2) {
     return (
       oneBookPrice * 2 * (1 - twoDifferentBooksDiscount) +
