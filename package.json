@@ -4,7 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "lint": "eslint --max-warnings 0 'src/**/*.{js,ts,jsx,tsx}'",
+    "lint": "eslint --max-warnings 0 'src/**/*.{js,jsx,ts,tsx}' && prettier --check src",
+    "lint:fix": "prettier --write src",
     "build": "tsc",
     "test": "jest src",
     "test:mutate": "stryker run"
