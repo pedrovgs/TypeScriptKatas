@@ -59,6 +59,20 @@ describe("Potter Store price check", () => {
       ])
     ).toBe(29.6);
   });
+  it("should buy all the bugs with repeated versions for 1, 2 and 3", () => {
+    expect(
+      checkout([
+        HarryPotterBook.Book1,
+        HarryPotterBook.Book1,
+        HarryPotterBook.Book2,
+        HarryPotterBook.Book2,
+        HarryPotterBook.Book3,
+        HarryPotterBook.Book3,
+        HarryPotterBook.Book4,
+        HarryPotterBook.Book5,
+      ])
+    ).toBe(51.6);
+  });
 
   /* Coverage above this line is 100% for every value checked, however there are 5 mutations surviving our mutation test run */
 
