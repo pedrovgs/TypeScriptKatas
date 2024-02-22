@@ -1,0 +1,3 @@
+const createDocument = (name: string) => {
+
+}
