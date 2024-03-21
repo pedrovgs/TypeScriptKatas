@@ -1,10 +1,11 @@
 {
-  "name": "TypeScriptPlayground",
+  "name": "typescript-playground",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "lint": "eslint --max-warnings 0 'src/**/*.{js,ts,jsx,tsx}'",
+    "lint": "eslint --max-warnings 0 src",
+    "lint:fix": "eslint --fix src && prettier --write src",
     "build": "tsc",
     "test": "jest src",
     "test:mutate": "stryker run"
